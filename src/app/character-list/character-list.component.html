@@ -1,0 +1,15 @@
+<h1><p>Characters</p></h1>
+
+<div *ngFor="let character of characterslist">
+  <h1>
+    <a [title]="character.name + ' details'"
+       [routerLink]="['/character', character.id]">
+      {{ character.name }}
+    </a>
+    ( <a [title]="character.specialization + ' details'"
+       [routerLink]="['/specialization', character.specialization]">
+      {{ character.specialization }}
+    </a> )
+
+  </h1>
+</div>

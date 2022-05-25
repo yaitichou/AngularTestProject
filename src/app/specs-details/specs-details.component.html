@@ -1,0 +1,9 @@
+<div *ngIf="specs">
+  <h1>Specialization : </h1><h2>{{ specs.specialization }}</h2>
+  <h1>Spells : </h1>
+  <div *ngFor="let spell of specs.spells">
+    <h2>{{spell}}</h2>
+  </div>
+  <br>
+  <h1>Description : </h1><h2>{{ specs.description }}</h2>
+</div>

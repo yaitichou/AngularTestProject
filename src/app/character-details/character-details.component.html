@@ -1,0 +1,12 @@
+
+<div *ngIf="character">
+<h1>Name </h1><h2>{{character.name}}</h2><br>
+<h1>Level </h1><h2>{{character.level}}</h2><br>
+<h1>Specialization </h1>
+<h2> <a [title]="character.specialization + ' details'"
+     [routerLink]="['/specialization', character.specialization]">
+    {{ character.specialization }}
+</a></h2><br>
+<h1>Story </h1><h2>{{character.story}}</h2><br>
+</div>
+
