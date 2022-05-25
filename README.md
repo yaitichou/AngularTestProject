@@ -1,6 +1,10 @@
-# Untitled1
+# Angular Test Project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6.
+
+## Goal of the program
+Running the program allows you to consult 2 different character sheets,
+as well as summaries of specializations available at the moment.
 
 ## Development server
 

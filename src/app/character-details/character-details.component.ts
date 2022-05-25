@@ -13,7 +13,7 @@ export class CharacterDetailsComponent implements OnInit {
   character: Character | undefined;
 
   ngOnInit(): void {
-
+    // Retrieval of the selected character id and its associated data
     const routeParams = this.route.snapshot.paramMap;
     const characterId = Number(routeParams.get('characterId'));
     this.character = characters.find(character => character.id === characterId);

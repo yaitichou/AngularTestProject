@@ -14,7 +14,7 @@ export class SpecsDetailsComponent implements OnInit {
   specs: Spec | undefined;
 
   ngOnInit(): void {
-
+    // Retrieval of the selected spec name and its associated data
     const routeParams = this.route.snapshot.paramMap;
     const specName = String(routeParams.get('specializationName'));
     this.specs = specs.find(spec => spec.specialization === specName);
